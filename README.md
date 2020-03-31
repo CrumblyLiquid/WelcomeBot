@@ -22,6 +22,6 @@ Windows:<br />
 PS: I'm not sure if these commands work properly. Search how to install them yourself please :).
 
 # Setup:
-- Change the 'TOKEN HERE' for your token
-- Change the 'general' for the name of the channel where you want 'Welcome messages' to go
+- Change the 'TOKEN HERE' in config.json for your token
+- Change the 'general' in config.json for the name of the channel where you want 'Welcome messages' to go
 - Start your bot with python and you're good to go!
