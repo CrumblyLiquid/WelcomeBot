@@ -25,3 +25,8 @@ PS: I'm not sure if these commands work properly. Search how to install them you
 - Change the 'TOKEN HERE' for your token
 - Change the 'general' for the name of the channel where you want 'Welcome messages' to go
 - Start your bot with python and you're good to go!
+
+# Message:
+- Non-changeable, with custom picture:
+
+![Screenshot](template.png)
