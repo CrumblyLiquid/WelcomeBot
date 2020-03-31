@@ -30,7 +30,7 @@ async def on_member_join(member):
     for channel in member.guild.channels:
         if channel.name == getConfig('channel'):
             async with aiohttp.ClientSession() as session: # Gets the avatar of user
-                async with session.get(str(member.avatar_url_as(size=256))) as response:
+                async with session.get(str(member.avatar_url_as(format='png', size=256))) as response:
                     if response.status != 200:
                         print('[ERROR]: Couldn\'t get picture from the avatar url!')
                         return
