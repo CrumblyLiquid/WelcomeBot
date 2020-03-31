@@ -19,7 +19,7 @@ Linux/masOS:<br />
 Windows:<br />
 `py -3 -m pip install -U pillow`
 
-PS: I'm not sure if these commands work properly. Search how to install the yourself please :).
+PS: I'm not sure if these commands work properly. Search how to install them yourself please :).
 
 # Setup:
 - Change the 'TOKEN HERE' for your token
