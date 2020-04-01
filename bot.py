@@ -27,8 +27,9 @@ async def on_ready():
 @bot.event
 async def on_member_join(member):
     # Finds channel specified in config.json under element 'channel'
+    chname = getConfig('channel')
     for channel in member.guild.channels:
-        if channel.name == getConfig('channel'):
+        if channel.name == chname:
             async with aiohttp.ClientSession() as session: # Gets the avatar of user
                 async with session.get(str(member.avatar_url_as(format='png', size=256))) as response:
                     if response.status != 200:
@@ -52,5 +53,9 @@ async def on_member_join(member):
                     
                     # Deletes the <user_id>.png
                     os.remove((str(Path(__file__).parent.absolute()) + f'/{member.id}.png'))
+
+@bot.command
+async def on_member_leave(member):
+    pass
 
 bot.run(getConfig('token'), reconnect=True)

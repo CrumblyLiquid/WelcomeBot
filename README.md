@@ -31,8 +31,3 @@ PS: I'm not sure if these commands work properly. Search how to install them you
 - Non-changeable, with custom picture:
 
 ![Screenshot](template.png)
-=======
-- Change the 'TOKEN HERE' in config.json for your token
-- Change the 'general' in config.json for the name of the channel where you want 'Welcome messages' to go
-- Start your bot with python and you're good to go!
->>>>>>> 4b78f377b241e99da010552b1920b42ea6684074
