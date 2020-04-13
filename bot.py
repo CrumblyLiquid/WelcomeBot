@@ -54,8 +54,8 @@ async def on_member_join(member):
                     # Deletes the <user_id>.png
                     os.remove((str(Path(__file__).parent.absolute()) + f'/{member.id}.png'))
 
-@bot.command
+@bot.event
 async def on_member_leave(member):
-    pass
+    pass # When I get good picture for leave event I'll add it. 
 
 bot.run(getConfig('token'), reconnect=True)

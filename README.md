@@ -28,6 +28,6 @@ PS: I'm not sure if these commands work properly. Search how to install them you
 - Start your bot with python and you're good to go!
 
 # Message:
-- Non-changeable, with custom picture:
+- You can change it in the bot.py (line 52), with custom picture:
 
 ![Screenshot](template.png)
