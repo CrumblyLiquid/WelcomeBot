@@ -22,12 +22,11 @@ Windows:<br />
 PS: I'm not sure if these commands work properly. Search how to install them yourself please :).
 
 # Setup:
-<<<<<<< HEAD
 - Change the 'TOKEN HERE' for your token
 - Change the 'general' for the name of the channel where you want 'Welcome messages' to go
 - Start your bot with python and you're good to go!
 
 # Message:
-- You can change it in the bot.py (line 52), with custom picture:
-
 ![Screenshot](template.png)
+
+- You could change the template picture but I highly discourage you from doing it seeing as you would have to change the positions of avatar pictures which is a bit pain to do.
