@@ -46,10 +46,13 @@ async def on_member_join(member):
                     template = Image.open(str(Path(__file__).parent.absolute()) + '/template.png')
                     template.paste(cavatar, (437, 40, 437 + cavatar.size[0], 40 + cavatar.size[1]))
                     template.paste(cavatar, (441, 381, 441 + cavatar.size[0], 381 + cavatar.size[1]))
-                    template.save(str(Path(__file__).parent.absolute()) + f'/{member.id}.png')
-                    
+                    byteimg = io.BytesIO()
+                    template.save(byteimg)
+                    byteimg.seek(0)
+                    finalimg = discord.File(byteimg)
+
                     # Sends the <user_id>.png with the welcoming message
-                    await channel.send(f'Welcome to {member.guild.name}, {member.mention}!', file = discord.File(str(Path(__file__).parent.absolute()) + f'/{member.id}.png'))
+                    await channel.send(f'Welcome to {member.guild.name}, {member.mention}!', file=finalimg)
                     
                     # Deletes the <user_id>.png
                     os.remove((str(Path(__file__).parent.absolute()) + f'/{member.id}.png'))
